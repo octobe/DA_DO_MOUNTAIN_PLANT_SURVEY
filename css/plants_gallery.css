@@ -1,0 +1,34 @@
+body {
+  padding-top: 100px;   
+  margin: 0 auto; 
+  font-family: 'Noto Sans TC', sans-serif;    
+  background: url('../img/背景.jpeg') no-repeat center center fixed;
+  background-size: cover;         
+}
+
+  .card {
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+ .card-text {
+    font-size: 1.5rem;
+ }  
+
+.navbar-nav .nav-link {
+    font-size: 2em ;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+    color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+footer {
+  text-align: center;
+}

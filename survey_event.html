@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website with Sidebar</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav role="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">      
+      <button id="sidebarNav" class="navbar-toggler d-block" type="button" data-toggle="collapse" data-target="#sidebarNav" aria-controls="sidebarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>            
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-50 mx-auto justify-content-around"> 
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plants_gallery.html">植調名錄</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="chart.html">植調圖表</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="survey_event.html">植調點滴</a>
+          </li>
+        </ul>
+      </div>      
+    </nav>
+  </header>  
+  <div class="container-fluid">
+    <div class="row">
+      <nav role="sidebar" class="sidebar">        
+        <div class="collapse navbar-collapse" id="sidebarNav">
+          <div class="sidebar">
+            <ul class="navbar-nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="#20230318">20230318復育臺灣百合</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#20230715">20230715抗日救狗行動</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#20231202">烤麵包、製作香草槌</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#20231209">割芒草</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>   
+      <main role="main" class="col-sm-10 col-md-9 col-lg-8"> 
+        <h1>植調點滴</h1>
+        <h2 id="20230318">20230318復育臺灣百合</h2>
+        <p>2023年3月18日，受訓中的荒野保護協會第24期解說員來訪大肚山，大頭老師特別邀請大家一起來復育臺灣百合。</p>
+        <figure>
+            <img src="img/復育臺灣百合.jpg" alt="復育臺灣百合">
+            <figcaption>復育臺灣百合</figcaption>                
+        </figure>        
+        <h2 id="20230715">20230715抗日救狗行動</h2> 
+        <p>2023年夏天，由於連日降雨，導致大肚山地區不少枯木傾倒，其中有兩棵傾倒的枯木，剛好分別壓在兩棵狗花椒樹幹上。為避免影響狗花椒的生長，大頭老師遂號召文山社區大學「一葉觀」班的學生及荒野保護協會大肚山組的志工，一起在這炎炎夏日，來場「抗日救狗」行動。由於傾倒的枯木胸徑不小，小白鷺乃商請荒野保護協會臺中分會第十六期解說員劉昆興出動其專業電鋸協助。果然，在專業電鋸的協助下，順利營救了兩棵被枯木壓住的狗花椒。</p>
+          <figure>
+            <video width="100%" height="400" controls autoplay="false" frameborder="0" allowfullscreen loading="lazy">
+                <source src="video/抗日救狗.mp4" type="video/mp4">          
+            </video>
+            <figcaption>劉昆興以專業電鋸移除壓在狗花椒樹幹上的枯木</figcaption>
+          </figure>
+        <h2 id="20231202">20231202烤麵包、製作香草槌</h2>
+        <p>20231202原本是大肚山自然體驗推廣活動，因為沒有民眾報名，只好取消，改成植調及定觀，並由小辮鵆精心策劃烤麵包及製作香草槌的活動，大夥玩得不亦樂乎！</p>
+        <figure>
+          <img src="img/烤麵包.jpg" alt="烤麵包">
+          <figcaption>烤麵包</figcaption>                
+        </figure> 
+        <figure>
+          <img src="img/香草槌.jpg" alt="香草槌">
+          <figcaption>香草槌</figcaption>                
+        </figure>
+        <h2 id="20231209">20231209割芒草</h2>
+        <p>為了保存先民以白背芒綁掃把的技藝，我們計畫邀請瑞井地區的耆老來教大家綁掃把。這個季節，正是白背芒開花的時候，我們相約一起到百合陣地來割芒草，作為來年綁掃把的材料。</p>
+            <figure>
+                <img src="img/割芒草.jpg" alt="割芒草">
+                <figcaption>割芒草</figcaption>
+            </figure>        
+      </main>
+    </div>
+  </div>
+  <footer>&copy;阿土 2024</footer>    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>    
+    <script src="js/script.js"></script>
+</body>
+</html>
