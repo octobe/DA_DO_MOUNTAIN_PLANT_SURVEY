@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>植物選單</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/chart.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <header>
-    <nav role="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">                
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">                
       <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -30,13 +30,34 @@
           </li>
         </ul>
       </div>      
-    </nav>
+    </nav>    
   </header>
   <main>
-    <div class="chartblock">  
-      <button onclick="addNewChart()">新增圖表</button>
+    <div class="chartconfigure">
+      <div class="config line">
+        <label for="leafColor">選擇葉子分數顏色：</label>
+        <input type="color" id="leafColor" onchange="changeLineColor('葉子分數', this.value)" value="#4BC0C0">
+      </div>
+      <div class="config line">
+        <label for="flowerColor">選擇花的分數顏色：</label>
+        <input type="color" id="flowerColor" onchange="changeLineColor('花的分數', this.value)" value="#FF6384">
+      </div>
+      <div class="config line">
+        <label for="fruitColor">選擇果實分數顏色：</label>
+        <input type="color" id="fruitColor" onchange="changeLineColor('果實分數', this.value)" value= "#FFCD56">
+      </div>
+      <div class="config display">
+        <button onclick="toggleChartDisplay()">併排顯示切換</button>
+      </div>
+    </div>    
+    <div class="chartblock">       
+      <button onclick="addNewChart()">新增圖表</button>       
     </div>
   </main>  
-<script src="js/chart.js"></script>
+  <footer>&copy;阿土 2024</footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/chart.js"></script>
 </body>
 </html>
