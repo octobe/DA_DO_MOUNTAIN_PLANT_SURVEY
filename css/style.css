@@ -109,4 +109,13 @@ transform: translateY(-2px);
   footer {
     text-align: center;
   }
+ 
+  video {
+    width: 100%;   
+  }
+
+  iframe {
+    width: 100%;
+  }
+
   
