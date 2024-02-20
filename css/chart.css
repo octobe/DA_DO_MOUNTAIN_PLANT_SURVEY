@@ -5,7 +5,8 @@ body {
 .chartblock { 
   position: relative;
   top:70px; 
-  font-size: 1.5em;
+  font-size: 1em;
+  font-weight: bold;
   display: grid;
   grid-template-columns: 95%;
   justify-content: space-evenly;
@@ -18,14 +19,19 @@ label {
   font-weight: bold;
 }
 
-select {
-  padding: 8px;
+select  {
+  padding: 2px;
   width: auto; 
-  font-size: 1em; 
+  font-size: 1em;
+  font-weight: bold; 
+}
+
+option {
+  font-weight: bold;
 }
 
 .chart { 
-  height: 400px;
+  height: 250px;
 }
 
 .chart-container {
@@ -37,12 +43,7 @@ button {
   padding: 5pxs; 
   font-size: 1em; 
   margin: 0 auto;
-}
-
-@media screen and (min-width: 1200px){
-  .chartblock {
-      grid-template-columns: 45% 45%;      
-  }    
+  font-weight: bold;
 }
 
 .navbar-nav .nav-link {
@@ -57,3 +58,25 @@ button {
   transform: translateY(-2px);
 }
 
+.chartconfigure { 
+  position: relative; 
+  top: 85px; 
+  display: flex;
+  justify-content: space-between;    
+}
+
+.display {
+  margin-left: auto;
+}
+
+
+.dual-display {
+  grid-template-columns: 45% 45%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;  
+}
