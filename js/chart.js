@@ -238,6 +238,10 @@ function formatDate(date) {
   const day = date.getDate().toString().padStart(2, '0');
   return `${year}/${month}/${day}`;
 }
+function toggleChartDisplay() {
+  const chartBlock = document.querySelector('.chartblock');
+  chartBlock.classList.toggle('dual-display');
+}
 
 // Call fetchData to initialize the existing chart
 fetchData();
