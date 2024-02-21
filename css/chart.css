@@ -5,7 +5,7 @@ body {
 .chartblock { 
   position: relative;
   top: 70px;
-  bottom: 10px;
+  padding-bottom: 10px;
   font-size: 1em;
   font-weight: bold;
   display: grid;
