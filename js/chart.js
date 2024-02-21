@@ -240,7 +240,15 @@ function formatDate(date) {
 }
 function toggleChartDisplay() {
   const chartBlock = document.querySelector('.chartblock');
+  const button = document.querySelector('.config.display button');
+  
   chartBlock.classList.toggle('dual-display');
+  
+  if (chartBlock.classList.contains('dual-display')) {
+    button.textContent = '單排顯示';
+  } else {
+    button.textContent = '併排顯示';
+  }
 }
 
 // Call fetchData to initialize the existing chart
