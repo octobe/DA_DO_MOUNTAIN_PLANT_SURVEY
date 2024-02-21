@@ -62,8 +62,7 @@ button {
   position: relative; 
   top: 85px; 
   display: flex;
-  justify-content: space-between;
-  margin: auto 10px;
+  justify-content: space-between;  
 }
 
 .display {
