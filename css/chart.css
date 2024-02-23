@@ -1,11 +1,18 @@
 body {      
-  font-family: 'Noto Sans TC', sans-serif;    
+  font-family: 'Noto Sans TC', sans-serif;
+  display: flex; 
+  min-height: 100vh;  
+  flex-direction: column; 
+}
+
+#container {
+  flex: 1;
 }
 
 .chartblock { 
   position: relative;
-  top: 70px;
-  padding-bottom: 10px;
+  margin-top:70px;
+  padding-bottom:10px; 
   font-size: 1em;
   font-weight: bold;
   display: grid;
@@ -62,7 +69,20 @@ option {
   position: relative; 
   top: 85px; 
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;      
+}
+
+.display {
+  margin-left: auto;
+}
+
+
+.dual-display {
+  grid-template-columns: 45% 45%;
+}
+
+footer {
+  text-align: center;
 }
 
 .display {
