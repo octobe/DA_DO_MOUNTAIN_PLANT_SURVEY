@@ -251,5 +251,8 @@ function toggleChartDisplay() {
   }
 }
 
+window.onload = function() {
+  document.getElementById("loading").style.display = "none";
+};
 // Call fetchData to initialize the existing chart
 fetchData();
