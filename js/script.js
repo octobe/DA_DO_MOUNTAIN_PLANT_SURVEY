@@ -18,7 +18,7 @@ $(document).ready(function () {
       $('.sidebarNav-icon').removeClass('navbar-toggler-icon-x').addClass('navbar-toggler-icon');
     });
   });
-  
+
   window.onload = function() {
     document.getElementById("loading").style.display = "none";
   };

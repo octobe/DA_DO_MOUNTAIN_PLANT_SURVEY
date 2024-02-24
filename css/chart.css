@@ -85,15 +85,6 @@ footer {
   text-align: center;
 }
 
-.display {
-  margin-left: auto;
-}
-
-
-.dual-display {
-  grid-template-columns: 45% 45%;
-}
-
 .loading-spin{
   border: 16px solid #f3f3f3; /* Light grey */
   border-top: 16px solid #3498db; /* Blue */
