@@ -4,8 +4,17 @@ body {
   font-family: 'Noto Sans TC', sans-serif;    
   background: url('../img/背景.jpeg') no-repeat center center fixed;
   background-size: cover;         
+  display: flex; 
+  min-height: 100vh;  
+  flex-direction: column;         
 }
 
+h1 {
+  font-family: cursive;
+}
+#container {
+flex: 1;
+}
   .card {
     transition: transform 0.3s;
   }
