@@ -1,0 +1,159 @@
+body {
+    padding-top: 100px; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    font-family: 'Noto Sans TC', sans-serif;    
+    background: url('../img/背景.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex; 
+    min-height: 100vh;  
+    flex-direction: column;         
+}
+
+#container {
+  flex: 1;
+}
+  
+.sidebar a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+color: rgba(1, 1, 7, 0.997);
+transition: color 0.3s;
+overflow: hidden;
+}
+     
+.navbar-nav .nav-link {
+font-size: 2em ;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+}
+  
+main {
+grid-area: content;
+font-size: 1.5em;
+text-align: justify;
+margin: 0 auto;
+}
+
+h1 {
+    font-family: cursive;    
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    font-family: cursive;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 8px;
+    margin-top: 20px;
+}
+
+  .record {   
+    display: grid;
+    grid-template-columns: 95%; 
+    margin: 0 auto; 
+  }
+
+  figcaption {
+    font-size: 1.2rem; 
+}
+
+img {
+max-width: 100%; 
+height: auto; 
+display: block; 
+}
+
+.navbar {        
+    z-index: 1000;
+    background-color: #333; 
+    }
+    
+.sidebar {
+position: fixed;
+top: 56px; 
+padding-top: 12px;
+bottom: auto; 
+left: 2%;
+width: auto; 
+z-index: 100; 
+overflow: hidden; 
+background-color: rgba(192, 192, 192);
+}
+    
+     
+:target:before {
+    content: "";
+    display: block;
+    height: 100px; 
+    margin: -70px 0 0; 
+    }
+
+@media screen and (min-width: 600px) {
+    .record {
+        grid-template-columns: repeat(3, 1fr);              
+    }    
+}  
+
+
+  
+.nav-link:hover {
+background-color: #ddd;
+color: #000;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transform: translateY(-2px);
+}
+
+
+.navbar-toggler-icon-x::before {
+    content: '\D7'; 
+    font-size: 2rem;
+    color: #060606; 
+  }
+
+  footer {
+    text-align: center;
+  }
+ 
+  video {
+    width: 100%;   
+  }
+
+  iframe {
+    width: 100%;    
+  }
+
+  .loading-spin{
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  #loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 999;
+  }
+  
+  .carousel-item img {
+    border: 5px solid #fff;
+    border-radius: 50%; /* 調整為50%以呈現橢圓形 */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
