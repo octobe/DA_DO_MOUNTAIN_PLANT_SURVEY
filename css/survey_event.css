@@ -152,8 +152,13 @@ transform: translateY(-2px);
     z-index: 999;
   }
   
-  .carousel-item img {
+  .carousel-inner {
     border: 5px solid #fff;
     border-radius: 50%; /* 調整為50%以呈現橢圓形 */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* 將背景顏色改為半透明的黑色 */
+    color: #fff; /* 修改字體顏色為白色 */
   }
